@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PT Merdeka Sejahtera Bersama</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="particles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="container">
+
+        <!-- KIRI -->
+        <div class="left">
+
+            <div class="logo">
+
+            </div>
+
+            <div class="company">
+                <h1>PT.MERDEKA</h1>
+                <h2>SEJAHTERA BERSAMA</h2>
+            </div>
+
+            <div class="line"></div>
+
+            <p class="desc">
+                Bersama Membangun Nilai,<br>
+                Bersama Meraih Masa Depan.
+            </p>
+
+            <div class="features">
+
+                <div class="feature">
+                    <div class="icon">🛡️</div>
+                    <h4>Integritas</h4>
+                    <p>Menjunjung tinggi etika, kejujuran, dan tanggung jawab dalam setiap tindakan.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">👥</div>
+                    <h4>Kolaborasi</h4>
+                    <p>Membangun sinergi yang kuat untuk mencapai tujuan bersama secara efektif.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">📈</div>
+                    <h4>Inovasi</h4>
+                    <p>Menghadirkan solusi kreatif dan berkelanjutan untuk masa depan yang lebih baik.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- KANAN -->
+        <div class="right">
+
+            <div class="login-box">
+
+                <h1>
+                    Selamat <span>Datang</span>
+                </h1>
+
+                <div class="small-line"></div>
+
+                <p class="subtitle">
+                    Silakan masuk untuk melanjutkan
+                </p>
+
+                <div class="input-group">
+                    <label>Email</label>
+                
+                    <div class="input-group">
+                    <input type="text" id="username" placeholder="Masukkan email atau username"
+                        onkeydown="tekanEnter(event)">
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Masukkan password"
+                            onkeydown="tekanEnter(event)">
+
+                        <span class="toggle-password" onmousedown="showPassword()" onmouseup="hidePassword()"
+                            onmouseleave="hidePassword()" ontouchstart="showPassword()" ontouchend="hidePassword()">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="options">
+
+                    <label>
+                        <input type="checkbox">
+                        Ingat saya
+                    </label>
+
+                    <a href="#" onclick="lupaPassword()">
+                        Lupa password?
+                    </a>
+
+                </div>
+
+                <button class="btn" onclick="login()">
+                    Masuk →
+                </button>
+
+                <div class="bottom">
+                    Belum memiliki akun?
+                    <a href="https://wa.me/6281000000?text=Halo%20Admin,%20saya%20ingin%20meminta%20akun%20HRD"
+                        target="_blank">
+                        Hubungi Administrator
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+
+        function login() {
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "admin" && password == "admin") {
+
+                window.location.href = "dashboard.html";
+
+            } else {
+
+                alert("Username atau Password salah!");
+
+            }
+        }
+    </script>
+
+    <script>
+        function lupaPassword() {
+            alert("Silakan hubungi Administrator untuk reset password");
+        }
+    </script>
+
+    <script>
+        function showPassword() {
+            document.getElementById("password").type = "text";
+        }
+
+        function hidePassword() {
+            document.getElementById("password").type = "password";
+        }
+
+        function tekanEnter(event) {
+            if (event.key === "Enter") {
+                // aksi login
+                console.log("Login...");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

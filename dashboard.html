@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard HRIS</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-cube"></i>
+            </div>
+            <div>
+                <h2>PT.MERDEKA</h2>
+                <span>SEJAHTERA BERSAMA</span>
+            </div>
+        </div>
+
+        <nav>
+            <a class="active" href="#">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-users"></i>
+                Data Karyawan
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-clock"></i>
+                Absensi
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-chart-column"></i>
+                Rekap Absensi
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-file-circle-check"></i>
+                Izin / Cuti / Sakit
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Pengaturan
+            </a>
+        </nav>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+
+        <header class="header">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Selamat datang kembali, Admin</p>
+            </div>
+
+            <div class="user-box">
+                <i class="fa-regular fa-bell"></i>
+                <img src="https://i.pravatar.cc/100" alt="">
+            </div>
+        </header>
+
+        <!-- Stats -->
+        <section class="stats">
+
+            <div class="card">
+                <div class="icon blue">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div>
+                    <span>Total Karyawan</span>
+                    <h2>248</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon green">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                    <span>Hadir Hari Ini</span>
+                    <h2>225</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon orange">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div>
+                    <span>Izin / Cuti</span>
+                    <h2>12</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon red">
+                    <i class="fa-solid fa-user-xmark"></i>
+                </div>
+                <div>
+                    <span>Tidak Hadir</span>
+                    <h2>11</h2>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Content -->
+        <section class="content">
+
+            <div class="chart-card">
+                <h3>Grafik Kehadiran</h3>
+
+                <div class="chart-placeholder">
+                    Grafik Absensi
+                </div>
+            </div>
+
+            <div class="employee-card">
+                <h3>Karyawan Baru</h3>
+
+                <div class="employee">
+                    <img src="https://i.pravatar.cc/50?img=1">
+                    <div>
+                        <strong>aaaa</strong>
+                        <p>koli</p>
+                    </div>
+                </div>
+
+                <div class="employee">
+                    <img src="https://i.pravatar.cc/50?img=2">
+                    <div>
+                        <strong>aaaa</strong>
+                        <p>koli</p>
+                    </div>
+                </div>
+
+                <div class="employee">
+                    <img src="https://i.pravatar.cc/50?img=3">
+                    <div>
+                        <strong>aaaa</strong>
+                        <p>koli</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Table -->
+        <section class="table-card">
+
+            <div class="table-header">
+                <h3>Absensi Hari Ini</h3>
+                <button>Export</button>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Jabatan</th>
+                        <th>Masuk</th>
+                        <th>Pulang</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>aaaa</td>
+                        <td>koli</td>
+                        <td>07:55</td>
+                        <td>17:00</td>
+                        <td><span class="badge success">Hadir</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>aaaa</td>
+                        <td>koli</td>
+                        <td>08:10</td>
+                        <td>17:00</td>
+                        <td><span class="badge warning">Terlambat</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>aaaa</td>
+                        <td>koli</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><span class="badge danger">Izin</span></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

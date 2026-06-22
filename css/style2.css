@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:1400px;
+    min-height:850px;
+    display:flex;
+    overflow:hidden;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.35);
+}
+
+.left-panel{
+    flex:1;
+    position:relative;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+    135deg,
+    rgba(10,25,47,.4),
+    rgba(0,0,0,.7)
+    );
+}
+
+.company-info{
+    position:relative;
+    z-index:2;
+    padding:70px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.logo{
+    width:110px;
+    margin-bottom:25px;
+    background:white;
+    border-radius:20px;
+    padding:10px;
+}
+
+.company-info h1{
+    font-size:3rem;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.company-info p{
+    font-size:18px;
+    color:#e5e7eb;
+    max-width:500px;
+    margin-bottom:50px;
+}
+
+.features{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.feature-card{
+    width:150px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    padding:20px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.feature-card span{
+    font-size:28px;
+}
+
+.feature-card h4{
+    margin-top:10px;
+}
+
+.feature-card small{
+    color:#d1d5db;
+}
+
+.right-panel{
+    width:500px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:50px;
+}
+
+.login-box{
+    width:100%;
+}
+
+.login-logo{
+    width:90px;
+    display:block;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.login-box h2{
+    text-align:center;
+    font-size:36px;
+    color:#111827;
+}
+
+.subtitle{
+    text-align:center;
+    color:#6b7280;
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    color:#374151;
+    font-weight:500;
+}
+
+.input-group input{
+    width:100%;
+    padding:15px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.input-group input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#2563eb;
+}
+
+.btn-login{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #0f4cd9
+    );
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-login:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(37,99,235,.3);
+}
+
+.footer-text{
+    text-align:center;
+    margin-top:30px;
+    color:#6b7280;
+    font-size:14px;
+}
+
+@media(max-width:992px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .right-panel{
+        width:100%;
+    }
+
+    .company-info{
+        padding:40px;
+    }
+
+    .company-info h1{
+        font-size:2rem;
+    }
+}
